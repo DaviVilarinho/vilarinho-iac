@@ -4,3 +4,10 @@ resource "aws_s3_bucket" "state_bucket" {
     enabled = true
   }
 }
+
+resource "aws_s3_bucket" "automated_backups" {
+  bucket = "automated-backups"
+  versioning {
+    enabled = false
+  }
+}
