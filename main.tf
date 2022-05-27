@@ -6,8 +6,8 @@ terraform {
     }
   }
 
-  backend {
-//    bucket = "vilarinho-state"
+  backend "s3" {
+    bucket = "vilarinho-state"
     region = "us-east-1"
   }
 }
