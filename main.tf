@@ -7,7 +7,7 @@ terraform {
   }
 
   backend {
-    bucket = "vilarinho-state"
+//    bucket = "vilarinho-state"
     region = "us-east-1"
   }
 }
