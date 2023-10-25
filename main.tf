@@ -2,13 +2,14 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "4.15.1"
+      version = "~> 5.0"
     }
   }
 
   backend "s3" {
     bucket = "vilarinho-state"
     region = "us-east-1"
+    key    = "vilarinho-iac"
   }
 }
 
